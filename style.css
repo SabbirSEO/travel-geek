@@ -35,11 +35,13 @@ p {
     background: var(--primary);
     width: 174px;
     height: 52px;
+    border: 0;
     border-radius: 8px;
+    color: #FFF;
     text-align: center;
     font-family: Mulish;
     font-size: 20px;
-    font-weight: 800;
+    font-weight: 700;
 }
 
 .naked-btn {
@@ -102,12 +104,91 @@ p {
 }
 
 
+/* END Header */
+
+/* Hero Section  */
+.hero {
+    background: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%), url('./Images/Group 13 (1) (1).png');
+    min-height: 500px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 16px;
+    margin: 20px auto 0 auto;
+}
+
+.hero-h1 {
+    color: #FFF;
+    font-size: 64px;
+    font-weight: 800;
+    margin: 24px 0;
+}
+
+.hero-desc {
+    width: 676px;
+    color: #FFF;
+}
+
+
+form.destination-form {
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.30);
+    padding: 16px;
+    margin-top: 48px;
+}
+
+input.destination-form {
+    width: 174px;
+    border-radius: 8px;
+    background: #FFF;
+    color: rgba(19, 19, 24, 0.50);
+    font-size: 16px;
+    padding: 16px;
+    margin-right: 24px;
+    border: 0;
+}
+
+select.destination-form {
+    width: 174px;
+    border-radius: 8px;
+    background: #FFF;
+    color: rgba(19, 19, 24, 0.50);
+    font-size: 16px;
+    padding: 16px;
+    margin-right: 24px;
+    border: 0;
+}
+
+.primary-btn img{
+    margin-bottom: -2px;
+}
+
+/* form input {
+    padding: 16px;
+    align-items: flex-start;
+    gap: 24px;
+} */
 
 
 /* Mobile Styles */
 
 @media screen and (max-width: 576px) {
+    /* Shared Mobile Styles */
 
+    body {
+        padding: 0 10px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    /* Shared Mobile Styles END */
+
+    /* Mobile Nav  */
     .left-part {
         display: flex;
     }
@@ -124,5 +205,49 @@ p {
     .right-part li {
         display: none;
     }
-}
 
+    /* Hero Section  */
+
+    .hero {
+        height: auto;
+        padding: 32px 24px;
+    }
+
+    .hero-h1 {
+        font-size: 22px;
+        margin: 10px 0;
+    }
+
+    .hero-desc {
+        width: auto;
+        color: #FFF;
+    }
+
+    form.destination-form {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        margin: 24px;
+    }
+
+    input.destination-form {
+        width: auto;
+        margin: 0;
+    }
+
+    select.destination-form {
+        width: auto;
+        margin: 0;
+    }
+
+    button.primary-btn {
+        width: 100%;
+        font-size: 16px;
+        font-weight: 700;
+    }
+    .primary-btn img{
+        margin-bottom: -5px;
+    }
+}
+}
