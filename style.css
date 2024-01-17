@@ -328,6 +328,43 @@ section.newsletter #off-container {
     margin-top: 0;
 }
 
+/* Footer  */
+footer {
+    background: rgba(19, 19, 24, 0.05);
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    justify-content: center;
+    padding: 100px 50px 20px 50px;
+    margin: 100px 0 0 0;
+}
+
+.footer-logo,
+.footer-icon {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    gap: 10px;
+}
+
+.footer-logo img {
+    margin-top: -10px;
+}
+
+.footer-text {
+    max-width: 769px;
+    text-align: center;
+}
+
+hr {
+    color: rgba(19, 19, 24, 0.10);
+    width: 872px;
+    margin: 50px 20px;
+}
+
+.copyright{
+    text-align: center;
+}
 
 /* Mobile Styles */
 
@@ -480,5 +517,23 @@ section.newsletter #off-container {
         font-weight: 800;
         margin: 0;
     }
+
+    /* Footer  */
+footer {
+    padding: 50px 20px 20px 20px;
+    margin: 50px 0px 0px 0px;
+}
+
+.footer-logo img {
+    margin-top: -10px;
+}
+
+.footer-text {
+    width: 100%;
+    text-align: center;
+}
+hr {
+    width: auto;
+}
 
 }
